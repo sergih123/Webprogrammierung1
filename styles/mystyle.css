@@ -1,0 +1,45 @@
+/* oxygen-regular - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/oxygen-v15-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+
+h1,h2,h3,h4,h5,p{
+    font-family: Oxygen;
+}
+
+body{
+    background-color: antiquewhite;
+    /*background-image: linear-gradient(black , white 90%);
+    */
+    padding-left: 10vw;
+}
+
+
+/*Variables for images*/
+/*:root{
+
+}*/
+
+.hobbyImageDiv {
+    width: 100%;
+    height: 25%;
+    border-radius: 15px;
+    overflow: hidden;
+    
+}
+
+/*Makes sure the img displays fully on the width*/
+.hobbyImageDiv img{
+    width: 100%;
+}
+
+div.hobby{
+    width: 600px;
+    height: 800px;
+}
+
