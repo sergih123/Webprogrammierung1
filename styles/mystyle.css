@@ -14,8 +14,7 @@ h1,h2,h3,h4,h5,p{
 
 body{
     background-color: antiquewhite;
-    /*background-image: linear-gradient(black , white 90%);
-    */
+    background-image: repeating-linear-gradient(to top right,rgb(246, 246, 246) ,rgb(246, 246, 246)1px, white 1px, white 4px);
     padding-left: 10vw;
 }
 
@@ -24,6 +23,16 @@ body{
 /*:root{
 
 }*/
+
+div.hobby{
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+}
+
+div.hobby h1{
+    font-weight: bolder;
+}
 
 .hobbyImageDiv {
     width: 100%;
@@ -38,8 +47,5 @@ body{
     width: 100%;
 }
 
-div.hobby{
-    width: 600px;
-    height: 800px;
-}
+
 
