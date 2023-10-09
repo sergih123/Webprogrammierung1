@@ -59,7 +59,7 @@ p a{
     text-decoration: none;
     font-size: 20px;
     font-weight: 100;
-    display: inline-block;  /*Para que el link vaya por todo el div*/
+    display: inline-block;  /*Para que el link vaya por todo el div, lo "fusiona"*/
     width: 100%;            /*Hace que el link (la parte clicklable, rellene el div entero*/
     height: 100%;
 }
