@@ -1,5 +1,14 @@
-/* oxygen-regular - latin_latin-ext */
+/* oxygen-300 - latin_latin-ext */
 @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/oxygen-v15-latin_latin-ext-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* oxygen-regular - latin_latin-ext */
+  @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Oxygen';
     font-style: normal;
@@ -7,37 +16,77 @@
     src: url('../fonts/oxygen-v15-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
   
+  /* oxygen-700 - latin_latin-ext */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/oxygen-v15-latin_latin-ext-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+body{
+    background-color: antiquewhite;
+    background-image: repeating-linear-gradient(to top right,rgb(241, 241, 241) ,rgb(241, 241, 241)2px, white 1px, white 3px);
+    padding-left: 10vw;
+}
 
 h1,h2,h3,h4,h5,p{
     font-family: Oxygen;
 }
 
-body{
-    background-color: antiquewhite;
-    background-image: repeating-linear-gradient(to top right,rgb(246, 246, 246) ,rgb(246, 246, 246)1px, white 1px, white 4px);
-    padding-left: 10vw;
+h1{
+    font-size: 50px;
+}
+
+p a{
+    color: #E6060E;
 }
 
 
-/*Variables for images*/
-/*:root{
-
-}*/
+/*------------------------------------------------------------------------*/
+/*------------------------HOBBY SPECIFIC VARIABLES------------------------*/
+/*------------------------------------------------------------------------*/
 
 div.hobby{
     width: 800px;
-    height: 800px;
     overflow: hidden;
 }
 
 div.hobby h1{
-    font-weight: bolder;
+    font-weight: 700;
+    padding: 0%;
+    border: 0;
+    margin-bottom: 0%;
+}
+
+div.hobby h3{
+    margin-top: 0%;
+    margin-bottom: 7%;
+    font-weight: 500;
+}
+
+div.hobby p{
+    line-height: 200%;
+}
+
+div.hobby button{
+    margin-top: 5%;
+    background-color: #1D1D1D;
+    border: none;
+    color: white;
+    text-align: center;
+    padding:3%;
+    font-family: Oxygen;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 .hobbyImageDiv {
     width: 100%;
-    height: 25%;
-    border-radius: 15px;
+    height: 200px;
+    border-radius: 10px;
     overflow: hidden;
     
 }
@@ -46,6 +95,8 @@ div.hobby h1{
 .hobbyImageDiv img{
     width: 100%;
 }
+
+
 
 
 
