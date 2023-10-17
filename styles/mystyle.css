@@ -26,8 +26,30 @@
   }
   
 body{
-    background-color: antiquewhite;
     background-image: repeating-linear-gradient(to top right,rgb(241, 241, 241) ,rgb(241, 241, 241)1.5px, white 1px, white 5px);
+    margin: 0;  /*Body apparently has an 8px margin by default*/
+}
+
+/*---------------------------------GENERAL-----------------------------*/
+
+*{
+    font-family: Oxygen;
+}
+
+h1{
+    font-size: 300%;
+    font-weight: 700;
+    padding: 0%;
+    border: 0;
+    margin-bottom: 0%;
+}
+
+p{
+    line-height: 200%;
+}
+
+a{
+    color: #E6060E;
 }
 
 /*---------------------------------MAIN HEADER--------------------------------*/
@@ -61,7 +83,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40%;
+    width: 60%;
     min-width: 560px;
 }
 
@@ -79,48 +101,28 @@ body{
 
 .main-header .main-header-text nav{
     display: flex;
-    border-radius: 30px;
-    background-color: rgba(18, 18, 18, 0.879);
-    text-align: center;
-    word-spacing: 0%;
-    padding: 10px;
-    height: 40px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+
+    padding: 10px;
+    height: 60px;
+
+    background-color: rgba(18, 18, 18, 0.879);
+    border-radius: 100PX;
+    
+    word-spacing: 0.3em;
+    letter-spacing: 0.1em;
+
 }
 
 .main-header .main-header-text  a{
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    padding: 0% 5% 0% 5%;
 }
 
 
-*{
-    font-family: Oxygen;
-}
 
-h1{
-    font-size: 300%;
-    font-weight: 700;
-    padding: 0%;
-    border: 0;
-    margin-bottom: 0%;
-}
-
-p{
-    line-height: 200%;
-}
-
-a{
-    color: #E6060E;
-}
-
-/*------------------------------------------------------------------------*/
-/*------------------------HOBBY SPECIFIC VARIABLES------------------------*/
-/*------------------------------------------------------------------------*/
-
-/* GRID IMPLEMENTATION */
+/*--------------------------SMALL HOBBIES-----------------------------*/
 h1#hobbies-grid-title{
     padding-top: 5%;
     padding-left: 5%;
@@ -186,7 +188,7 @@ div.hobby-small button{
 }
 
 
-/*CORTE CORTE CORTE*/
+/*------------------LONG HOBBIES-----------------------------------------*/
 
 .hobby{
     width: 100%;
@@ -237,7 +239,7 @@ div.hobby-small button{
     width: 100%;
 }
 
-
+/*-------------------------MAIN GRID--------------------------------------*/
 .main-grid{
     padding: 5%;
     display: grid;
@@ -266,7 +268,7 @@ div.hobby-small button{
 }
 
 
-/*---------------REVIEW-----------------*/
+/*---------------REVIEW-----------------------------------------------*/
 .review{
     width: 50%;
 }
@@ -289,7 +291,7 @@ div.hobby-small button{
     height: 100%;
 }
 
-/*---------------FOOTER1----------------*/
+/*---------------FOOTER1----------------------------------------------*/
 .footer{
     background-color: #0f0f0f;
     display: grid;
@@ -310,7 +312,7 @@ div.hobby-small button{
     row-gap: 5%;
 }
 
-/*----------------FOOTER2---------------*/
+/*----------------FOOTER2---------------------------------------------------*/
 footer{
     background-color: #000000;
     color: #878787;
